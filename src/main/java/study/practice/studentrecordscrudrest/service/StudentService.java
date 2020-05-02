@@ -21,7 +21,7 @@ public class StudentService {
 	}
 	
 	public Student getStudentByID(int id) {
-		Student student = studentRepo.findById(id).orElse(new Student());
+		Student student = studentRepo.findById(id).orElse(null);
 		return student;
 	}
 	
